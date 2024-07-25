@@ -50,8 +50,8 @@ body {
 }
 
 .upper-header {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 30px clamp(40px, 200px, 1fr) 30px 30px;
 }
 
 .search {
@@ -59,12 +59,30 @@ body {
     align-items: center;
 }
 
-.header-search-logo, .alerts-img {
-    height: 24px;
-    width: auto;
+.header-search-logo {
+    grid-column: 1/2;
+}
+
+.header-search-input {
+    grid-column: 2/3;
+}
+
+.alerts {
+    grid-column: 3/4;
 }
 
 .header-user-logo {
     height: 40px;
     width: auto;
+    grid-column: 4/5;
 }
+
+.header-user-name {
+    grid-column: 5/6;
+}
+
+.header-search-logo, .alerts-img {
+    height: 24px;
+    width: auto;
+}
+
