@@ -43,3 +43,28 @@ body {
     width: auto;
     padding: 12px;
 }
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.upper-header {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex; 
+    align-items: center;
+}
+
+.header-search-logo, .alerts-img {
+    height: 24px;
+    width: auto;
+}
+
+.header-user-logo {
+    height: 40px;
+    width: auto;
+}
